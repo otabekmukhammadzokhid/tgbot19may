@@ -3,6 +3,7 @@ import logging
 from aiogram import Bot, Dispatcher, F
 from aiogram.types import Message
 from aiogram.filters import CommandStart
+from aiogram.types import ReplyKeyboardRemove
 
 # ==========================================
 # CONFIG
@@ -35,7 +36,7 @@ async def start_command(message: Message):
 
     await message.answer(
         "Welcome! Feel free to share your feedback, complaints, or suggestions anonymously. Your identity will remain private, and your message will be forwarded securely."
-
+        , reply_markup=ReplyKeyboardRemove()
     )
 
 # ==========================================
