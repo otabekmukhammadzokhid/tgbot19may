@@ -60,10 +60,10 @@ async def anonymous_forward(message: Message):
         # Reply to user
         await message.reply("Thank you for your feedback. Our team will review your comments carefully and work on the improvments accordingly.")
 
-        await message.answer(
-            "Feel free to share your feedback, complaints, or suggestions anonymously. Your identity will remain private, and your message will be forwarded securely."
+        #await message.answer(
+        #    "Feel free to share your feedback, complaints, or suggestions anonymously. Your identity will remain private, and your message will be forwarded securely."
 
-        )
+        #)
 
     except Exception as e:
         logging.error(e)
